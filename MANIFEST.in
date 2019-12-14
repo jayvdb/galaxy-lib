@@ -1,6 +1,17 @@
 include *.rst LICENSE
-include galaxy/util/docutils_template.txt
+include galaxy/tools/xsd/README.md
+# package data
 include galaxy/exceptions/error_codes.json
 include galaxy/tools/deps/mulled/invfile.lua
 include galaxy/tools/deps/resolvers/default_conda_mapping.yml
+include galaxy/tools/toolbox/filters/examples.py.sample
+include galaxy/tools/xsd/LICENSE
+include galaxy/tools/xsd/galaxy.jxb
 include galaxy/tools/xsd/galaxy.xsd
+include galaxy/util/docutils_template.txt
+# docs and tests
+include *requirements*.txt
+include tox.ini
+recursive-include docs *.rst
+recursive-include galaxy *.md
+recursive-include tests *.py
