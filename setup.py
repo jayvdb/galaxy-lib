@@ -56,6 +56,7 @@ PACKAGES = [
     'galaxy.util',  # Incomplete
     'galaxy.util.logging',
     'galaxy.util.path',
+    'galaxy.web',
 ]
 ENTRY_POINTS = '''
         [console_scripts]
@@ -73,6 +74,8 @@ PACKAGE_DATA = {
         'exceptions/error_codes.json',
         'tools/deps/mulled/invfile.lua',
         'tools/deps/resolvers/default_conda_mapping.yml',
+        'tools/toolbox/filters/examples.py.sample',
+        'tools/xsd/galaxy.jxb',
     ],
 }
 PACKAGE_DIR = {
